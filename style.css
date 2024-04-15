@@ -1,18 +1,167 @@
-@font-face {
-  font-family: "Gilroy";
-  src: url(fonts/gilroy-light.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gilroy';
+  font-family: "Work Sans", sans-serif;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 80px;
+  padding-top: 120px;
+  gap: 250px;
+}
+
+/* Left Started */
+
+#left {
+  height: 100%;
+  width: 45%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+#left h1 {
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 100px;
+  word-spacing: -15px;
+  letter-spacing: -7px;
+  color: #292929;
+}
+
+/* Bottom Left Started */
+#bottom-left {
+  width: 100%;
+  height: 40%;
+  /* background-color: yellow; */
+}
+
+#color {
+  width: fit-content;
+  /* background-color: blue; */
+  padding: 8px 15px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+#color h5 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+#color1 {
+  width: 20px;
+  height: 20px;
+  background-color: #7B6651;
+  border-radius: 50%;
+}
+
+#color2 {
+  width: 20px;
+  height: 20px;
+  background-color: #353331;
+  border-radius: 50%;
+}
+
+#left h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#left p {
+  font-size: 14px;
+  font-weight: 500;
+  width: 60%;
+  color: #090909;
+  line-height: 25px;
+}
+
+/* Right Started */
+#right {
+  width: 25%;
+  height: 90%;
+  position: relative;
+  /* background-color: blue; */
+}
+
+#right-top {
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#right-top h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#right-top h5 {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+#right-top h5 i {
+  letter-spacing: -3px;
+}
+
+#right img {
+  width: 100%;
+  height: 91%;
+  object-fit: cover;
+}
+
+#black-circle {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  right: -20%;
+  top: 34%;
+  border-radius: 50%;
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#black-circle h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#rotated {
+  position: absolute;
+  left: -20%;
+  bottom: 0;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  font-size: 30px;
+  font-weight:600;
+
+}
